@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,8 @@
             domain: "www.chatbase.co"
         }
     </script>
-    <script src="https://www.chatbase.co/embed.min.js" chatbotId="MAIHe342UgofYPHnCZ0Bq" domain="www.chatbase.co" defer></script>
+    <script src="https://www.chatbase.co/embed.min.js" chatbotId="MAIHe342UgofYPHnCZ0Bq" domain="www.chatbase.co"
+        defer></script>
     <style>
         /* Reset and Base Styles */
         * {
@@ -200,18 +202,34 @@
         }
 
         .hero-circle {
-            width: 300px;
-            height: 300px;
+            width: 350px;
+            height: 350px;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             border: 2px solid rgba(255, 255, 255, 0.2);
             animation: float 6s ease-in-out infinite;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
         }
 
         .scroll-indicator {
@@ -233,9 +251,22 @@
         }
 
         @keyframes scroll-bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-10px); }
-            60% { transform: translateY(-5px); }
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
         }
 
         /* Section Styles */
@@ -277,6 +308,11 @@
             font-size: 1.1rem;
             margin-bottom: 1.5rem;
             color: #64748b;
+        }
+
+        .about-img img {
+            height: 300px;
+            width: 430px;
         }
 
         .skills {
@@ -596,6 +632,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -608,7 +645,8 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="#contact" class="nav-link">Resume </a></li>
+                <li><a href="Priyanshu_Khandelwal.pdf" class="nav-link" target="_blank">Resume</a></li>
+
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -635,8 +673,10 @@
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
-            <div class="hero-image" >
-                <div class="hero-circle"></div>
+            <div class="hero-image">
+                <div class="hero-circle">
+                    <img src="myimage.jpg.jpg" alt="">
+                </div>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -655,12 +695,12 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a passionate full-stack developer creating 
-                        digital solutions that make a difference. I specialize in modern web technologies 
+                        I'm a passionate full-stack developer creating
+                        digital solutions that make a difference. I specialize in modern web technologies
                         and love bringing creative ideas to life through code.
                     </p>
                     <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to 
+                        When I'm not coding, you can find me exploring new technologies, contributing to
                         open-source projects, or enjoying a good cup of coffee while planning my next project.
                     </p>
                     <div class="skills">
@@ -673,19 +713,23 @@
                     </div>
                 </div>
                 <!-- <div class="about-stats">
-                    <div class="stat-item">
-                        <h3 class="stat-number">50+</h3>
-                        <p class="stat-label">Projects Completed</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3 class="stat-number">5+</h3>
-                        <p class="stat-label">Years Experience</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3 class="stat-number">30+</h3>
-                        <p class="stat-label">Happy Clients</p>
-                    </div>
-                </div> -->
+                        <div class="stat-item">
+                            <h3 class="stat-number">50+</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">5+</h3>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">30+</h3>
+                            <p class="stat-label">Happy Clients</p>
+                        </div>
+                    </div> -->
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="About">
+                </div>
             </div>
         </div>
     </section>
@@ -703,20 +747,21 @@
                         <img src="https://picsum.photos/400/300?random=1" alt="E-commerce Platform">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link">Live Demo</a>
-                                <a href="#" class="project-link">GitHub</a>
+                                <a href="https://movie-search-app-570.pages.dev/" class="project-link">Live Demo</a>
+                                <!-- <a href="#" class="project-link">GitHub</a> -->
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">E-commerce Platform</h3>
+                        <h3 class="project-title">MOVIE NEST</h3>
                         <p class="project-description">
-                            A full-stack e-commerce solution built with React, Node.js, and MongoDB.
+                            A sleek movie discovery app that lets you search, explore, and view details about your
+                            favorite films.
                         </p>
                         <div class="project-tech">
                             <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
+                            <span>Axios</span>
+                            <span>TMDB API </span>
                         </div>
                     </div>
                 </div>
@@ -726,20 +771,21 @@
                         <img src="https://picsum.photos/400/300?random=2" alt="Task Management App">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link">Live Demo</a>
-                                <a href="#" class="project-link">GitHub</a>
+                                <a href="https://starkesport.com/" class="project-link">Live Demo</a>
+                                <!-- <a href="#" class="project-link">GitHub</a> -->
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Task Management App</h3>
+                        <h3 class="project-title">Stark Esports</h3>
                         <p class="project-description">
-                            A collaborative task management application with real-time updates.
+                            A competitive gaming platform empowering players and teams through tournaments, content, and
+                            community.
                         </p>
                         <div class="project-tech">
-                            <span>Vue.js</span>
+                            <span>Node.js</span>
                             <span>Express</span>
-                            <span>Socket.io</span>
+                            <span>MongoDB</span>
                         </div>
                     </div>
                 </div>
@@ -749,20 +795,23 @@
                         <img src="https://picsum.photos/400/300?random=3" alt="Weather Dashboard">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link">Live Demo</a>
-                                <a href="#" class="project-link">GitHub</a>
+                                <a href="#" class="project-link">Currently working on it</a>
+                                <!-- <a href="#" class="project-link">GitHub</a> -->
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Weather Dashboard</h3>
+                        <h3 class="project-title">AI-Powered Learning Companion</h3>
                         <p class="project-description">
-                            A responsive weather dashboard with interactive charts and forecasts.
+                            Empowers self-taught developers and students by acting as an intelligent learning assistant
+                            tailored to their pace and goals.
+
+                            .
                         </p>
                         <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>Chart.js</span>
-                            <span>API</span>
+                            <span>React.js</span>
+                            <span>Node.js </span>
+                            <span>MongoDB</span>
                         </div>
                     </div>
                 </div>
@@ -781,13 +830,13 @@
                 <div class="contact-info">
                     <h3>Let's work together</h3>
                     <p>
-                        I'm always interested in new opportunities and exciting projects. 
+                        I'm always interested in new opportunities and exciting projects.
                         Whether you have a question or just want to say hi, feel free to reach out!
                     </p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <strong>Email:</strong>
-                            <a href="mailto:john@example.com">priyanshukhandelwal1252@gmail.com</a>
+                            <a href="mailto:priyanshukhandelwal1252@gmail.com">priyanshukhandelwal1252@gmail.com</a>
                         </div>
                         <div class="contact-item">
                             <strong>Phone:</strong>
@@ -796,10 +845,10 @@
                         <div class="contact-item">
                             <strong>Location:</strong>
                             <span>Jaipur, Rajasthan</span>
-                        </div>  
+                        </div>
                     </div>
                 </div>
-                <form class="contact-form" action="https://formsubmit.co/priyanshukhandelwal1252@gmail.com" method="POST">
+                <form class="contact-form" action="https://formsubmit.co/hipriyanshukhandelwal@gmail.com" method="POST">
                     <div class="form-group">
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
@@ -821,7 +870,7 @@
             <div class="footer-content">
                 <p>&copy; 2025 Priyanshu Khandelwal. All rights reserved.</p>
                 <div class="social-links">
-                    <a href="#" class="social-link">GitHub</a>
+                    <!-- <a href="#" class="social-link">GitHub</a> -->
                     <a href="https://www.linkedin.com/in/priyanshu-khandelwal-/" class="social-link">LinkedIn</a>
                     <a href="https://www.instagram.com/_priyanshu__12/" class="social-link">Instagram</a>
                 </div>
@@ -868,36 +917,44 @@
             const contactForm = document.querySelector(".contact-form");
             if (contactForm) {
                 contactForm.addEventListener("submit", function (e) {
-                e.preventDefault();
+                    e.preventDefault();
 
-                const formData = new FormData(this);
-                const submitBtn = this.querySelector('button[type="submit"]');
-                const originalText = submitBtn.textContent;
+                    const formData = new FormData(this);
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.textContent;
 
-                submitBtn.textContent = "Sending...";
-                submitBtn.disabled = true;
+                    submitBtn.textContent = "Sending...";
+                    submitBtn.disabled = true;
 
-                fetch("https://formsubmit.co/priyanshukhandelwal1252@gmail.com", {
-                    method: "POST",
-                    body: formData
-                })
-                .then(response => {
-                    if (response.ok) {
-                        alert("Message sent successfully!");
-                        this.reset();
-                    } else {
-                        alert("Failed to send message. Please try again.");
-                    }
-                })
-                .catch(error => {
-                    alert("An error occurred: " + error.message);
-                })
-                .finally(() => {
-                    submitBtn.textContent = originalText;
-                    submitBtn.disabled = false;
+                    fetch("https://formsubmit.co/hipriyanshukhandelwal@gmail.com", {
+                        method: "POST",
+                        body: formData
+                    })
+                        .then(response => {
+                            if (response.ok) {
+                                alert("Message sent successfully!");
+                                this.reset();
+                            } else {
+                                alert("Failed to send message. Please try again.");
+                            }
+                        })
+                        .catch(error => {
+                            alert("An error occurred: " + error.message);
+                        })
+                        .finally(() => {
+                            submitBtn.textContent = originalText;
+                            submitBtn.disabled = false;
+                        });
                 });
-            });
-        }
+            }
+            // const contactForm = document.querySelector(".contact-form");
+            // if (contactForm) {
+            //     contactForm.addEventListener("submit", function (e) {
+            //         const submitBtn = this.querySelector('button[type="submit"]');
+            //         submitBtn.textContent = "Sending...";
+            //         submitBtn.disabled = true;
+            //     });
+            // }
 
 
             // Navbar background on scroll
@@ -914,4 +971,5 @@
         });
     </script>
 </body>
+
 </html>
